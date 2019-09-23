@@ -1,0 +1,619 @@
+/* fonts */
+@font-face {
+  font-family: "Gilory";
+  font-style: normal;
+  font-weight: 300;
+  src:
+    local("Gilory"),
+    url("../fonts/gilroylight.woff2") format("woff2"),
+    url("../fonts/gilroylight.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Gilory";
+  font-style: normal;
+  font-weight: 800;
+  src:
+    local("Gilory"),
+    url("../fonts/gilroyextrabold.woff2") format("woff2"),
+    url("../fonts/gilroyextrabold.woff") format("woff");
+}
+
+/* global */
+body {
+  margin: 0;
+  padding: 0;
+
+  font-family: "Gilory", Arial, sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 800;
+  color: #000000;
+
+  background-color: #ffffff;
+}
+
+a {
+  text-decoration: none;
+}
+
+.button {
+  font: inherit;
+
+  text-align: center;
+  color: #000000;
+  vertical-align: middle;
+  text-transform: uppercase;
+  letter-spacing: 3.7px;
+
+  background-color: transparent;
+  background-image: linear-gradient(transparent 40%, #f0c52e 40%, #f0c52e 60%, transparent 60%);
+  border: none;
+
+  cursor: pointer;
+}
+
+.button:hover,
+.button:focus {
+  background-image: linear-gradient(#f0c52e 0%, #f0c52e 100%);
+}
+
+.button:active {
+  color: #a88a20;
+}
+
+/* main-header */
+.main-header {
+  background-color: #f7e296;
+  background-image: linear-gradient(#ffffff 18%, #f7e296 18%);
+}
+
+.main-header ul {
+  list-style: none;
+}
+
+.main-header a,
+.site-search p,
+.search-button {
+  font-family: "Open Sans", Arial, sans-serif;
+  font-size: 15px;
+  line-height: 30px;
+  font-weight: 300;
+  color: #000000;
+}
+
+.main-header a[href]:hover,
+.main-header a[href]:focus {
+  opacity: 0.6;
+}
+
+.main-header a[href]:active {
+  opacity: 0.3;
+}
+
+.site-search input[type="search"] {
+  opacity: 0.3;
+}
+
+.site-search input[type="search"]:hover {
+  opacity: 0.6;
+}
+
+.site-search input[type="search"]:focus {
+  opacity: 1;
+}
+
+.search-button {
+  text-align: center;
+  vertical-align: middle;
+
+  background-color: #f7e296;
+  border: 2px solid #000000;
+
+  cursor: pointer;
+}
+
+.search-button:hover,
+.search-button:focus {
+  color: #ffffff;
+
+  background-color: #000000;
+}
+
+.search-button:active {
+  color: #4d4d4d;
+}
+
+.header-user-account .logout {
+  opacity: 0.3;
+}
+
+.header-user-account a.logout:hover,
+.header-user-account a.logout:focus {
+  opacity: 1;
+}
+
+.header-user-account a.logout:active {
+  opacity: 0.5;
+}
+
+.main-site-navigation {
+  background-color: #f7e296;
+}
+
+.header-catalog-menu > a,
+.header-services a,
+.header-contacts a {
+  font: inherit;
+  letter-spacing: 3.7px;
+  text-transform: uppercase;
+}
+
+.header-catalog-menu .current-page {
+  opacity: 0.3;
+
+  cursor: default;
+}
+
+/* main-page */
+main p,
+.promo-slider-table .parameters-row {
+  font-family: "Open Sans", Arial, sans-serif;
+  font-size: 15px;
+  line-height: 30px;
+  font-weight: 300;
+  color: #464646;
+  letter-spacing: 0.2px;
+}
+
+main ul {
+  list-style: none;
+}
+
+.promo-slider {
+  background-color: #f7e296;
+  background-image: linear-gradient(#f7e296 18%, #ffffff 18%);
+}
+
+.promo-slider-slogan {
+  font: inherit;
+  font-size: 47px;
+  line-height: 56px;
+  color: #000000;
+  letter-spacing: 0.8px;
+}
+
+.promo-slider-table .parameters-row {
+  font-size: 13px;
+  line-height: 20px;
+}
+
+.promo-slider-table .values-row {
+  font-size: 36px;
+  line-height: 48px;
+  font-weight: 300;
+  letter-spacing: 0.2px;
+}
+
+.categories-list a {
+  color: #000000;
+  letter-spacing: 0.2px;
+}
+
+.categories-list a:active {
+  opacity: 0.3;
+}
+
+.services-slider {
+  background-color: #e5e5e5;
+  background-image: linear-gradient(#ffffff 39%, #e5e5e5 39%);
+}
+
+.services-slider-button:active {
+  color: #f7e184;
+
+  background-image: linear-gradient(#000000 0%, #000000 100%);
+}
+
+.services-slider-button-current,
+.services-slider-button-current:hover,
+.services-slider-button-current:focus {
+  color: #f7e184;
+
+  background-image: linear-gradient(#000000 0%, #000000 100%);
+
+  cursor: default;
+}
+
+.services-slider-heading {
+  font-size: 47px;
+  line-height: 48px;
+  letter-spacing: 0.7px;
+}
+
+.brands-item a:hover,
+.brands-item a:focus,
+.brands-item a:active {
+  display: inline-block;
+
+  background-color: transparent;
+  background-position: 0 0;
+  background-repeat: no-repeat;
+}
+
+.brands-item-dji a:hover,
+.brands-item-dji a:focus,
+.brands-item-dji a:active {
+  background-image: url("../img/brand-dji-color.png");
+}
+
+.brands-item-spgadgets a:hover,
+.brands-item-spgadgets a:focus,
+.brands-item-spgadgets a:active {
+  background-image: url("../img/brand-spgadgets-color.png");
+}
+
+.brands-item-gopro a:hover,
+.brands-item-gopro a:focus,
+.brands-item-gopro a:active {
+  background-image: url("../img/brand-gopro-color.png");
+}
+
+.brands-item-vive a:hover,
+.brands-item-vive a:focus,
+.brands-item-vive a:active {
+  background-image: url("../img/brand-vive-color.png");
+}
+
+.brands-item img:hover,
+.brands-item img:focus,
+.brands-item img:active {
+  opacity: 0;
+}
+
+.about-us h2,
+.contacts h2 {
+  font-size: 47px;
+  line-height: 48px;
+  letter-spacing: 0.7px;
+}
+
+.shipping-companies-list {
+  font-size: 16px;
+  line-height: 40px;
+}
+
+/* inner-page */
+.page-title {
+  font-size: 47px;
+  line-height: 48px;
+  letter-spacing: 0.7px;
+}
+
+.breadcrumbs li {
+  font-family: "Open Sans", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 300;
+  letter-spacing: 0.2px;
+}
+
+.breadcrumbs a,
+.breadcrumbs-current {
+  color: #464646;
+
+  opacity: 0.3;
+}
+
+.breadcrumbs a:hover,
+.breadcrumbs a:focus {
+  opacity: 0.6;
+}
+
+.breadcrumbs a:active {
+  opacity: 0.1;
+}
+
+.breadcrumbs-current {
+  cursor: default;
+}
+
+.filters,
+.sort,
+.pagination {
+  background-color: #eeeeee;
+}
+
+.filters h2,
+.sort h2 {
+  font-size: 16px;
+  text-transform: uppercase;
+  letter-spacing: 3.7px;
+}
+
+.filters h2 {
+  background-color: #dcdcdc;
+}
+
+.filters-form fieldset {
+  border: none;
+}
+
+.filters-form legend {
+  letter-spacing: 0.2px;
+}
+
+.filters-form label,
+.sort-type-list a,
+.catalog-item-hover .compare {
+  font-family: "Open Sans", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 40px;
+  font-weight: 300;
+  color: #000000;
+  letter-spacing: 0.2px;
+}
+
+.filters-form input:disabled + label {
+  color: #a6a6a6;
+}
+
+.range-filter-price {
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.range-filter-price .min-price,
+.range-filter-price .max-price,
+.range-filter-price input[value=""] {
+  opacity: 0.2;
+}
+
+.range-filter-price input {
+  background-color: #eeeeee;
+  border: none;
+}
+
+.sort-type-list a {
+  line-height: 18px;
+  letter-spacing: 0;
+
+  opacity: 0.3;
+}
+
+.sort-type-list a[href]:hover,
+.sort-type-list a[href]:focus {
+  opacity: 0.6;
+}
+
+.sort-type-list a[href]:active {
+  opacity: 1;
+}
+
+.sort-type-current a {
+  opacity: 1;
+}
+
+.catalog-list h3 {
+  font: inherit;
+  letter-spacing: 0.3px;
+}
+
+.catalog-list a {
+  color: #000000;
+}
+
+.catalog-list a:active {
+  opacity: 0.3;
+}
+
+.catalog-item-price {
+  font-family: "Gilory", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 300;
+  color: #464646;
+}
+
+.catalog-item-hover .compare {
+  font-size: 13px;
+  line-height: 20px;
+
+  opacity: 0.5;
+}
+
+.catalog-item-hover .compare:hover,
+.catalog-item-hover .compare:focus {
+  opacity: 1;
+}
+
+.catalog-item-hover .compare:active {
+  opacity: 0.2;
+}
+
+.pagination {
+  font-size: 16px;
+  text-transform: uppercase;
+  letter-spacing: 3.7px;
+}
+
+.pagination a {
+  color: #000000;
+}
+
+.pagination-button:hover,
+.pagination-button:focus {
+  background-color: #d9d9d9;
+}
+
+.pagination-button:active {
+  color: #979797;
+}
+
+.pagination .pagination-button-disabled,
+.pagination .pagination-button-disabled:hover,
+.pagination .pagination-button-disabled:focus,
+.pagination .pagination-button-disabled:active {
+  color: #979797;
+
+  background-color: #eeeeee;
+
+  cursor: default;
+}
+
+.pagination-list a {
+  opacity: 0.3;
+}
+
+.pagination-item a:active {
+  opacity: 1;
+}
+
+.pagination-item-current a {
+  opacity: 1;
+
+  cursor: default;
+}
+
+/* main-footer */
+.main-footer {
+  background-color: #464646;
+}
+
+.main-footer p,
+.footer-first-row a,
+.footer-phone-number {
+  font-family: "Open Sans", Arial, sans-serif;
+  font-size: 15px;
+  line-height: 30px;
+  font-weight: 300;
+  color: #ffffff;
+}
+
+.main-footer ul {
+  list-style: none;
+}
+
+.footer-first-row a {
+  opacity: 0.7;
+}
+
+.footer-first-row a[href]:hover,
+.footer-first-row a[href]:focus {
+  opacity: 1;
+}
+
+.footer-first-row a[href]:active {
+  opacity: 0.3;
+}
+
+.footer-first-row .footer-logo {
+  opacity: 1;
+}
+
+.footer-first-row a[href].footer-logo:hover,
+.footer-first-row a[href].footer-logo:focus {
+  opacity: 0.6;
+}
+
+.footer-first-row a[href].footer-logo:active {
+  opacity: 0.3;
+}
+
+.footer-user-account .logout {
+  opacity: 0.3;
+}
+
+.footer-user-account a.logout:hover,
+.footer-user-account a.logout:focus {
+  opacity: 1;
+}
+
+.footer-user-account a.logout:active {
+  opacity: 0.5;
+}
+
+.footer-second-row a {
+  color: #ffffff;
+  letter-spacing: 3.7px;
+  text-transform: uppercase;
+
+  opacity: 1;
+}
+
+.footer-second-row a:hover,
+.footer-second-row a:focus {
+  opacity: 0.7;
+}
+
+.footer-second-row a:active {
+  opacity: 0.3;
+}
+
+.main-footer .footer-phone-number {
+  letter-spacing: 0;
+  text-transform: none;
+}
+
+.footer-third-row a {
+  color: #ffffff;
+
+  opacity: 0.3;
+}
+
+.footer-third-row a:hover,
+.footer-third-row a:focus {
+  opacity: 0.6;
+}
+
+.footer-third-row a:active {
+  opacity: 0.1;
+}
+
+.footer-third-row .footer-copyright {
+  opacity: 1;
+}
+
+.footer-third-row .footer-copyright:hover,
+.footer-third-row .footer-copyright:focus {
+  opacity: 0.6;
+}
+
+.footer-third-row .footer-copyright:active {
+  opacity: 0.3;
+}
+
+/* modals */
+.write-us-form input,
+.write-us-form textarea {
+  font-family: "Open Sans", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+  color: #464646;
+
+  background-color: #f2f2f2;
+  border: none;
+}
+
+.write-us-form input:hover,
+.write-us-form textarea:hover {
+  background-color: #ebebeb;
+}
+
+.write-us-form input:focus,
+.write-us-form textarea:focus {
+  background-color: #ffffff;
+  border: 3px solid #f7e296;
+}
+
+/* .write-us-form input:not(:focus):required,
+.write-us-form textarea:not(:focus):required {
+  background-color: #f6dada;
+  box-shadow: none;
+}*/
+
+.write-us-form .invalid-value,
+.write-us-form .invalid-value:not(:focus):hover {
+  background-color: #f6dada;
+}
