@@ -3,8 +3,11 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Девайс - Каталог</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400&display=swap&subset=cyrillic" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
-  <body class="inner-page">
+  <body>
     <header class="main-header">
       <nav class="main-index-navigation">
         <a class="header-logo" href="index.html">
@@ -23,7 +26,7 @@
 
         <div class="header-user-account">
           <a href="#">Валентин Петухов</a>
-          <a href="#">Выйти</a>
+          <a class="logout" href="#">Выйти</a>
         </div>
         <ul class="header-shoping-functions">
           <li><a href="#">Сравнить</a></li>
@@ -33,11 +36,11 @@
 
       <div class="header-row">
         <nav class="main-site-navigation">
-          <ul class="header-catalog-menu">
-            <li><a href="catalog.html">Каталог товаров</a>
+          <ul>
+            <li class="header-catalog-menu"><a href="#">Каталог товаров</a>
               <ul class="products-navigation">
                 <li><a href="#">Виртуальная реальность</a></li>
-                <li><a href="catalog.html">Моноподы для селфи</a></li>
+                <li><a class="current-page">Моноподы для селфи</a></li>
                 <li><a href="#">Экшн-камеры</a></li>
               </ul>
               <ul class="products-navigation">
@@ -108,7 +111,7 @@
                 <label for="color-red-id">Красный</label>
               </li>
               <li>
-                <input id="color-pink-id" class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="color-pink">
+                <input id="color-pink-id" class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="color-pink" disabled>
                 <label for="color-pink-id">Розовый</label>
               </li>
             </ul>
@@ -153,34 +156,34 @@
             <p class="catalog-item-price">500 руб.</p>
             <ul class="catalog-item-hover">
               <li><a class="button" href="#">В корзину</a></li>
-              <li><a href="#">Добавить к сравнению</a></li>
+              <li><a class="compare" href="#">Добавить к сравнению</a></li>
             </ul>
           </li>
           <li class="catalog-item">
             <a href="#"><h3>Профессиональная селфи-палка</h3></a>
             <p class="catalog-item-image"><img src="img/product-selfie-pro.jpg" width="360" height="380" alt="Фотография профессиональной селфи-палки"></p>
-            <p class="catalog-item-price">1500 руб.</p>
+            <p class="catalog-item-price">1 500 руб.</p>
             <ul class="catalog-item-hover">
               <li><a class="button" href="#">В корзину</a></li>
-              <li><a href="#">Добавить к сравнению</a></li>
+              <li><a class="compare" href="#">Добавить к сравнению</a></li>
             </ul>
           </li>
           <li class="catalog-item">
             <a href="#"><h3>Непотопляемая селфи-палка</h3></a>
             <p class="catalog-item-image"><img src="img/product-selfie-waterproof.jpg" width="360" height="380" alt="Фотография непотопляемой селфи-палки"></p>
-            <p class="catalog-item-price">2500 руб.</p>
+            <p class="catalog-item-price">2 500 руб.</p>
             <ul class="catalog-item-hover">
               <li><a class="button" href="#">В корзину</a></li>
-              <li><a href="#">Добавить к сравнению</a></li>
+              <li><a class="compare" href="#">Добавить к сравнению</a></li>
             </ul>
           </li>
           <li class="catalog-item">
             <a href="#"><h3>Селфи-палка «Следуй за мной»</h3></a>
             <p class="catalog-item-image"><img src="img/product-selfie-followme.jpg" width="360" height="380" alt="Фотография профессиональной селфи-палки «Следуй за мной»"></p>
-            <p class="catalog-item-price">4900 руб.</p>
+            <p class="catalog-item-price">4 900 руб.</p>
             <ul class="catalog-item-hover">
               <li><a class="button" href="#">В корзину</a></li>
-              <li><a href="#">Добавить к сравнению</a></li>
+              <li><a class="compare" href="#">Добавить к сравнению</a></li>
             </ul>
           </li>
         </ul>
@@ -198,13 +201,13 @@
     </main>
 
     <footer class="main-footer">
-      <div class="footer-row">
+      <div class="footer-row footer-first-row">
         <a class="footer-logo" href="index.html">
-          <img src="img/logo-device.svg" width="163" height="35" alt="Логотип интернет-магазина «Девайс»">
+          <img src="img/logo-device-orange.svg" width="163" height="35" alt="Логотип интернет-магазина «Девайс»">
         </a>
         <div class="footer-user-account">
           <a href="#">Валентин Петухов</a>
-          <a href="#">Выйти</a>
+          <a class="logout" href="#">Выйти</a>
         </div>
         <ul class="footer-shoping-functions">
           <li><a href="#">Сравнить</a></li>
@@ -212,7 +215,7 @@
         </ul>
       </div>
 
-      <div class="footer-row">
+      <div class="footer-row footer-second-row">
         <p>г. Москва, ул. Строителей, 15</p>
 
         <ul class="footer-info-menu">
@@ -224,7 +227,7 @@
         <a class="footer-phone-number" href="#">Тел.: +7 (495) 495-95-95</a>
       </div>
 
-      <div class="footer-row">
+      <div class="footer-row footer-third-row">
         <ul class="footer-social">
           <li><a class="social-button" href="#"><span class="visually-hidden">Фейсбук</span></a></li>
           <li><a class="social-button" href="#"><span class="visually-hidden">Инстаграм</span></a></li>
