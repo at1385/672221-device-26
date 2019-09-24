@@ -450,7 +450,7 @@ main ul {
 }
 
 .pagination-button:active {
-  color: #979797;
+  color: rgba(0, 0, 0, 0.3);
 }
 
 .pagination .pagination-button-disabled,
@@ -468,11 +468,18 @@ main ul {
   color: rgba(0, 0, 0, 0.3);
 }
 
+.pagination-list a:hover,
+.pagination-list a:focus {
+  color: rgba(0, 0, 0, 0.6);
+}
+
 .pagination-item a:active {
   color: rgba(0, 0, 0, 1);
 }
 
-.pagination-item-current a {
+.pagination-item-current a,
+.pagination-item-current a:hover,
+.pagination-item-current a:focus {
   color: rgba(0, 0, 0, 1);
 
   cursor: default;
