@@ -24,10 +24,10 @@ body {
   margin: 0;
   padding: 0;
 
-  font-family: "Gilory", Arial, sans-serif;
-  font-size: 18px;
-  line-height: 24px;
-  font-weight: 800;
+  font-family: "Open Sans", Arial, sans-serif;
+  font-size: 15px;
+  line-height: 30px;
+  font-weight: 300;
   color: #000000;
 
   background-color: #ffffff;
@@ -38,10 +38,12 @@ a {
 }
 
 .button {
-  font: inherit;
-
-  text-align: center;
+  font-family: "Gilory", Arial, sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 800;
   color: #000000;
+  text-align: center;
   vertical-align: middle;
   text-transform: uppercase;
   letter-spacing: 3.7px;
@@ -74,12 +76,8 @@ a {
 }
 
 .main-header a,
-.site-search p,
 .search-button {
-  font-family: "Open Sans", Arial, sans-serif;
-  font-size: 15px;
-  line-height: 30px;
-  font-weight: 300;
+  font: inherit;
   color: #000000;
 }
 
@@ -105,17 +103,17 @@ a {
   opacity: 1;
 }
 
-.site-search input[type="search"] {
+.site-search input {
   color: rgba(0, 0, 0, 0.3);
 
   border: none;
 }
 
-.site-search input[type="search"]:hover {
+.site-search input:hover {
   color: rgba(0, 0, 0, 0.6);
 }
 
-.site-search input[type="search"]:focus {
+.site-search input:focus {
   color: rgba(0, 0, 0, 1);
 
   border-bottom: 2px solid #000000;
@@ -146,12 +144,12 @@ a {
   color: rgba(0, 0, 0, 0.3);
 }
 
-.header-user-account a.logout:hover,
-.header-user-account a.logout:focus {
+.header-user-account .logout:hover,
+.header-user-account .logout:focus {
   color: rgba(0, 0, 0, 1);
 }
 
-.header-user-account a.logout:active {
+.header-user-account .logout:active {
   color: rgba(0, 0, 0, 0.5);
 }
 
@@ -162,7 +160,10 @@ a {
 .header-catalog-menu > a,
 .header-services a,
 .header-contacts a {
-  font: inherit;
+  font-family: "Gilory", Arial, sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 800;
   letter-spacing: 3.7px;
   text-transform: uppercase;
 }
@@ -177,10 +178,6 @@ a {
 /* main-page */
 main p,
 .promo-slider-table .parameters-row {
-  font-family: "Open Sans", Arial, sans-serif;
-  font-size: 15px;
-  line-height: 30px;
-  font-weight: 300;
   color: #464646;
   letter-spacing: 0.2px;
 }
@@ -194,11 +191,21 @@ main ul {
   background-image: linear-gradient(#f7e296 18%, #ffffff 18%);
 }
 
+.promo-slider-slogan,
+.promo-slider-table .values-row,
+.categories-list a,
+.services-slider-heading,
+.about-us h2,
+.contacts h2,
+.shipping-companies-list {
+  font-family: "Gilory", Arial, sans-serif;
+  font-weight: 800;
+  color: #000000;
+}
+
 .promo-slider-slogan {
-  font: inherit;
   font-size: 47px;
   line-height: 56px;
-  color: #000000;
   letter-spacing: 0.8px;
 }
 
@@ -215,7 +222,8 @@ main ul {
 }
 
 .categories-list a {
-  color: #000000;
+  font-size: 18px;
+  line-height: 24px;
   letter-spacing: 0.2px;
 }
 
@@ -243,7 +251,9 @@ main ul {
   cursor: default;
 }
 
-.services-slider-heading {
+.services-slider-heading,
+.about-us h2,
+.contacts h2 {
   font-size: 47px;
   line-height: 48px;
   letter-spacing: 0.7px;
@@ -289,19 +299,25 @@ main ul {
   opacity: 0;
 }
 
-.about-us h2,
-.contacts h2 {
-  font-size: 47px;
-  line-height: 48px;
-  letter-spacing: 0.7px;
-}
-
 .shipping-companies-list {
   font-size: 16px;
   line-height: 40px;
 }
 
 /* inner-page */
+.page-title,
+.filters h2,
+.sort h2,
+.filters-form legend,
+.range-filter-price label,
+.range-filter-price input,
+.catalog-item-price,
+.pagination {
+  font-family: "Gilory", Arial, sans-serif;
+  font-weight: 800;
+  color: #000000;
+}
+
 .page-title {
   font-size: 47px;
   line-height: 48px;
@@ -309,10 +325,8 @@ main ul {
 }
 
 .breadcrumbs li {
-  font-family: "Open Sans", Arial, sans-serif;
   font-size: 14px;
   line-height: 24px;
-  font-weight: 300;
   letter-spacing: 0.2px;
 }
 
@@ -343,6 +357,7 @@ main ul {
 .filters h2,
 .sort h2 {
   font-size: 16px;
+  line-height: 24px;
   text-transform: uppercase;
   letter-spacing: 3.7px;
 }
@@ -356,27 +371,35 @@ main ul {
 }
 
 .filters-form legend {
+  font-size: 18px;
+  line-height: 24px;
   letter-spacing: 0.2px;
 }
 
-.filters-form label,
-.sort-type-list a,
-.catalog-item-hover .compare {
-  font-family: "Open Sans", Arial, sans-serif;
+.filters-form label {
   font-size: 14px;
   line-height: 40px;
-  font-weight: 300;
-  color: #000000;
   letter-spacing: 0.2px;
+
+  cursor: pointer;
 }
 
 .filters-form input:disabled + label {
   color: #a6a6a6;
+
+  cursor: default;
 }
 
-.range-filter-price {
+.range-filter-price label,
+.range-filter-price input {
   font-size: 14px;
+  line-height: 24px;
   font-weight: 300;
+  color: rgba(0, 0, 0, 0.2);
+}
+
+.range-filter-price label {
+  cursor: default;
 }
 
 .range-filter-price input {
@@ -384,15 +407,10 @@ main ul {
   border: none;
 }
 
-.range-filter-price .min-price,
-.range-filter-price .max-price,
-.range-filter-price input {
-  color: rgba(0, 0, 0, 0.2);
-}
-
 .sort-type-list a {
-  font-weight: 400;
+  font-size: 14px;
   line-height: 18px;
+  font-weight: 400;
   letter-spacing: 0;
 
   color: rgba(0, 0, 0, 0.3);
@@ -412,11 +430,6 @@ main ul {
   color: rgba(0, 0, 0, 1);
 }
 
-.catalog-list h3 {
-  font: inherit;
-  letter-spacing: 0.3px;
-}
-
 .catalog-list a {
   color: #000000;
 }
@@ -425,8 +438,14 @@ main ul {
   color: rgba(0, 0, 0, 0.3);
 }
 
-.catalog-item-price {
+.catalog-list h3 {
   font-family: "Gilory", Arial, sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: 0.3px;
+}
+
+.catalog-item-price {
   font-size: 16px;
   line-height: 24px;
   font-weight: 300;
@@ -435,7 +454,8 @@ main ul {
 
 .catalog-item-hover .compare {
   font-size: 13px;
-  line-height: 20px;
+  line-height: 36px;
+  letter-spacing: 0.2px;
 
   color: rgba(0, 0, 0, 0.5);
 }
@@ -451,6 +471,7 @@ main ul {
 
 .pagination {
   font-size: 16px;
+  line-height: 24px;
   text-transform: uppercase;
   letter-spacing: 3.7px;
 }
@@ -506,10 +527,6 @@ main ul {
 .main-footer p,
 .footer-first-row a,
 .footer-phone-number {
-  font-family: "Open Sans", Arial, sans-serif;
-  font-size: 15px;
-  line-height: 30px;
-  font-weight: 300;
   color: #ffffff;
 }
 
@@ -573,6 +590,13 @@ main ul {
   color: rgba(255, 255, 255, 0.3);
 }
 
+.footer-info-menu {
+  font-family: "Gilory", Arial, sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 800;
+}
+
 .main-footer .footer-phone-number {
   letter-spacing: 0;
   text-transform: none;
@@ -603,7 +627,6 @@ main ul {
 /* modals */
 .write-us-form input,
 .write-us-form textarea {
-  font-family: "Open Sans", Arial, sans-serif;
   font-size: 14px;
   line-height: 18px;
   font-weight: 400;
