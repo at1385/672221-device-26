@@ -55,6 +55,8 @@ a {
 
 .button:hover,
 .button:focus {
+  background-color: #f0c52e;
+  /* background-image: linear-gradient(#f0c52e 0%, #f0c52e 100%); */
 }
 
 .button:active {
@@ -101,6 +103,7 @@ a {
 
 .site-search input[type="search"]:focus {
   color: rgba(0, 0, 0, 1);
+
 }
 
 .search-button {
@@ -588,13 +591,13 @@ main ul {
   font-weight: 400;
   color: rgba(70, 70, 70, 0.4);
 
-  background-color: #f2f2f2;
+  background-color: rgba(229, 229, 229, 0.5);
   border: none;
 }
 
 .write-us-form input:hover,
 .write-us-form textarea:hover {
-  background-color: #ebebeb;
+  background-color: rgba(229, 229, 229, 0.8);
 }
 
 .write-us-form input:focus,
