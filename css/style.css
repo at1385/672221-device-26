@@ -1,4 +1,4 @@
-/* fonts */
+/* FONTS */
 @font-face {
   font-family: "Gilory";
   font-style: normal;
@@ -19,7 +19,7 @@
     url("../fonts/gilroyextrabold.woff") format("woff");
 }
 
-/* global */
+/* GLOBAL */
 body {
   margin: 0;
   padding: 0;
@@ -95,7 +95,8 @@ input[type="radio"].visually-hidden {
   color: rgba(0, 0, 0, 0.3);
 }
 
-/* main-header */
+/* MAIN-HEADER */
+/* Общие*/
 .main-header {
   margin-top: 21px;
 }
@@ -131,6 +132,7 @@ input[type="radio"].visually-hidden {
   background-image: linear-gradient(#ffffff 19px, #f7e296 19px);
 }
 
+/* Логотип */
 .main-index-navigation {
   margin-bottom: 24px;
 }
@@ -155,6 +157,7 @@ input[type="radio"].visually-hidden {
   opacity: 1;
 }
 
+/* Строки */
 .header-row {
   display: flex;
   flex-wrap: wrap;
@@ -163,6 +166,7 @@ input[type="radio"].visually-hidden {
   margin-left: 60px;
 }
 
+/* 1-я строка */
 .header-first-row {
   margin-bottom: 26px;
 }
@@ -178,6 +182,7 @@ input[type="radio"].visually-hidden {
   margin-top: 3px;
 }
 
+/* 1-я строка - Форма поиска */
 .site-search {
   display: flex;
 }
@@ -231,6 +236,7 @@ input[type="radio"].visually-hidden {
   display: block;
 }
 
+/* 1-я строка - Правая колонка */
 .header-user-account {
   display: flex;
   flex-wrap: wrap;
@@ -292,10 +298,12 @@ input[type="radio"].visually-hidden {
   padding-left: 28px;
 }
 
+/* 2-я строка */
 .header-second-row {
   padding-bottom: 49px;
 }
 
+/* 2-я строка - Каталог товаров */
 .main-site-navigation {
   width: 500px;
 }
@@ -358,6 +366,7 @@ input[type="radio"].visually-hidden {
   margin-bottom: 6px;
 }
 
+/* 2-я строка - Правая колонка */
 .header-services {
   display: flex;
   flex-wrap: wrap;
@@ -376,7 +385,8 @@ input[type="radio"].visually-hidden {
   margin-top: 3px;
 }
 
-/* main-page */
+/* MAIN-PAGE */
+/* Общие */
 main p,
 .promo-slider-table .parameters-row {
   margin: 0;
@@ -392,6 +402,7 @@ main ul {
   list-style: none;
 }
 
+/* Промо-слайдер */
 .promo-slider {
   margin-bottom: 105px;
   background-color: #f7e296;
@@ -494,11 +505,12 @@ main ul {
   letter-spacing: 0.2px;
 }
 
-.promo-slides-item .button {
+.promo-slide-info-button {
   width: 220px;
   margin-bottom: 50px;
 }
 
+/* Категории товаров */
 .categories-of-products {
   margin-bottom: 80px;
 }
@@ -538,6 +550,7 @@ main ul {
   color: rgba(0, 0, 0, 0.3);
 }
 
+/* Слайдер сервисов */
 .services-slider {
   margin-bottom: 94px;
   padding-bottom: 69px;
@@ -613,6 +626,7 @@ main ul {
   margin-bottom: 31px;
 }
 
+/* Бренды товаров */
 .brands-of-products {
   margin-bottom: 93px;
 }
@@ -662,6 +676,7 @@ main ul {
   opacity: 0;
 }
 
+/* "О нас" и "Контакты" */
 .info-columns {
   display: flex;
   margin-bottom: 82px;
@@ -716,12 +731,13 @@ main ul {
   margin-bottom: 69px;
 }
 
-.info-button {
+.info-sections-button {
   display: block;
   width: 260px;
 }
 
-/* inner-page */
+/* INNER-PAGE */
+/* Общие */
 .page-title,
 .filters h2,
 .sort h2,
@@ -812,6 +828,7 @@ main ul {
   letter-spacing: 3.7px;
 }
 
+/* Левая колонка - Фильтры */
 .filters h2 {
   width: 268px;
   margin-bottom: 81px;
@@ -854,6 +871,7 @@ main ul {
   cursor: default;
 }
 
+/* Левая колонка - Фильтры - Стоимость*/
 .range-filter-controls {
   /* temp */
   height: 45px;
@@ -888,6 +906,7 @@ main ul {
   border: none;
 }
 
+/* Левая колонка - Фильтры - Цвет и Bluetooth*/
 .color-filter legend,
 .bluetooth-filter legend {
   margin-bottom: 17px;
@@ -906,6 +925,7 @@ main ul {
   width: 200px;
 }
 
+/* Правая колонка - Сортировка товаров */
 .sort {
   display: flex;
   width: 830px;
@@ -963,6 +983,7 @@ main ul {
   background-color: #ffffff;
 }
 
+/* Правая колонка - Каталог */
 .catalog {
   margin-bottom: -11px;
   padding-top: 69px;
@@ -996,6 +1017,7 @@ main ul {
   letter-spacing: 0.3px;
 }
 
+/* Правая колонка - Каталог - Карточка товара */
 .catalog-item {
   position: relative;
 
@@ -1027,6 +1049,7 @@ main ul {
   height: 380px;
 }
 
+/* Правая колонка - Каталог - Блок при наведении */
 .catalog-item-hover {
   position: absolute;
   top: 0;
@@ -1072,6 +1095,7 @@ main ul {
   color: rgba(0, 0, 0, 0.2);
 }
 
+/* Правая колонка - Пагинатор */
 .pagination {
   display: flex;
   justify-content: space-between;
@@ -1085,6 +1109,7 @@ main ul {
   letter-spacing: 3.7px;
 }
 
+/* Правая колонка - Пагинатор - Кнопки: Назад-Вперед*/
 .pagination-button {
   flex-shrink: 0;
   width: 135px;
@@ -1112,6 +1137,7 @@ main ul {
   cursor: default;
 }
 
+/* Правая колонка - Пагинатор - Номера страниц*/
 .pagination-list {
   display: flex;
   justify-content: center;
@@ -1150,7 +1176,8 @@ main ul {
   cursor: default;
 }
 
-/* main-footer */
+/* MAIN-FOOTER */
+/* Общие */
 .main-footer {
   background-color: #464646;
   /* margin-top: 82px; */
@@ -1171,12 +1198,14 @@ main ul {
   list-style: none;
 }
 
+/* Строки */
 .footer-row {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
 }
 
+/* Первая строка */
 .footer-first-row {
   padding-top: 65px;
   margin-bottom: 20px;
@@ -1195,6 +1224,7 @@ main ul {
   color: rgba(255, 255, 255, 0.3);
 }
 
+/* Первая строка - Логотип*/
 .footer-first-row .footer-logo:hover,
 .footer-first-row .footer-logo:focus {
   opacity: 0.6;
@@ -1208,6 +1238,7 @@ main ul {
   opacity: 1;
 }
 
+/* Первая строка - Правая колонка*/
 .footer-first-row-right-column {
   display: flex;
   margin-top: -2px;
@@ -1267,6 +1298,7 @@ main ul {
   padding-left: 28px;
 }
 
+/* Вторая строка */
 .footer-second-row {
   margin-bottom: 63px;
 }
@@ -1288,10 +1320,12 @@ main ul {
   color: rgba(255, 255, 255, 0.3);
 }
 
+/* Вторая строка - Адрес */
 .footer-adress {
   width: 205px;
 }
 
+/* Вторая строка - Информационное меню */
 .main-footer .footer-info-menu {
   display: flex;
   flex-wrap: wrap;
@@ -1314,6 +1348,7 @@ main ul {
   margin-right: 0;
 }
 
+/* Вторая строка - Связь */
 .footer-communication {
   display: flex;
   justify-content: flex-end;
@@ -1326,6 +1361,7 @@ main ul {
   text-transform: none;
 }
 
+/* Третья строка */
 .footer-third-row {
   padding-bottom: 65px;
 }
@@ -1343,6 +1379,7 @@ main ul {
   color: rgba(255, 255, 255, 0.1);
 }
 
+/* Третья строка - Социальные сети*/
 .main-footer .footer-social {
   display: flex;
   margin-left: 500px;
@@ -1352,6 +1389,7 @@ main ul {
   margin-right: 23px;
 }
 
+/* Третья строка - Авторские права*/
 .footer-third-row .footer-copyright:hover,
 .footer-third-row .footer-copyright:focus {
   opacity: 0.6;
@@ -1361,7 +1399,7 @@ main ul {
   opacity: 0.3;
 }
 
-/* modals */
+/* MODALS */
 /* write-us */
 .modal-write-us {
   width: 760px;
