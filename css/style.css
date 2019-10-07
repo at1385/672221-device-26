@@ -977,6 +977,7 @@ main ul {
 
 .catalog-pagination-wrapper {
   padding-bottom: 77px;
+  padding-left: 73px;
 
   background-color: #ffffff;
 }
@@ -996,7 +997,6 @@ main ul {
   flex-wrap: wrap;
   justify-content: space-between;
   width: 760px;
-  margin-left: 73px;
 }
 
 .catalog-list a {
@@ -1099,7 +1099,6 @@ main ul {
   justify-content: space-between;
   align-items: center;
   min-height: 70px;
-  margin-left: 73px;
 
   font-size: 16px;
   line-height: 24px;
