@@ -1021,6 +1021,7 @@ main ul {
 
   display: flex;
   flex-direction: column;
+  width: 360px;
   margin-bottom: 46px;
 }
 
@@ -1043,7 +1044,6 @@ main ul {
 
 .catalog-item-image {
   margin-bottom: 32px;
-  width: 360px;
   height: 380px;
 }
 
