@@ -928,7 +928,6 @@ main ul {
 /* Правая колонка - Сортировка товаров */
 .sort {
   display: flex;
-  width: 830px;
   padding-top: 21px;
 }
 
