@@ -604,17 +604,20 @@ main ul {
 }
 
 .services-list {
-  width: 460px;
   padding-top: 74px;
+}
+
+.services-item {
+  padding-right: 240px;
+}
+
+.services-item p {
+  width: 460px;
 }
 
 .services-item-warranty,
 .services-item-credit {
   display: none;
-}
-
-.services-item-credit {
-  width: 430px;
 }
 
 .services-slider-heading,
