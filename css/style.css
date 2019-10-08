@@ -697,7 +697,7 @@ main ul {
 .info-columns {
   display: flex;
   flex-wrap: wrap;
-  margin-bottom: 82px;
+  margin-bottom: 81px;
 }
 
 .about-us,
@@ -1223,7 +1223,7 @@ main ul {
 /* Первая строка */
 .footer-first-row {
   padding-top: 65px;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
 
 .footer-first-row a {
@@ -1240,6 +1240,12 @@ main ul {
 }
 
 /* Первая строка - Логотип*/
+.main-footer .footer-logo {
+  display: block;
+  width: 163px;
+  height: 35px;
+}
+
 .footer-first-row .footer-logo:hover,
 .footer-first-row .footer-logo:focus {
   opacity: 0.6;
@@ -1256,33 +1262,29 @@ main ul {
 /* Первая строка - Правая колонка*/
 .footer-first-row-right-column {
   display: flex;
-  margin-top: -2px;
+  justify-content: flex-end;
+  width: 800px;
 }
 
 .footer-user-account {
   display: flex;
+  justify-content: flex-end;
   flex-wrap: wrap;
-  width: 260px;
+  width: 575px;
 }
 
-.footer-user-account a:nth-child(2n-1) {
-  margin-right: 20px;
-  padding-left: 27px;
-
-  letter-spacing: 0.2px;
-}
-
-.footer-user-account .user-login,
-.user-login ~ a {
-  margin-left: 155px;
-  padding-left: 27px;
+.footer-user-account a {
+  margin-right: 37px;
+  padding-left: 28px;
 }
 
 .footer-user-account .user-profile {
-  margin-right: 20px;
+  margin-right: 18px;
 }
 
 .footer-user-account .user-logout {
+  padding-left: 0;
+
   color: rgba(255, 255, 255, 0.3);
 }
 
@@ -1297,25 +1299,19 @@ main ul {
 
 .footer-shoping-functions {
   display: flex;
+  justify-content: space-between;
   flex-wrap: wrap;
   width: 220px;
 }
 
-.footer-shoping-functions li {
-  margin-right: 31px;
-  width: 73px;
-  padding-left: 28px;
-}
-
 .footer-shoping-functions li:nth-child(2n) {
   margin-right: 0;
-  width: auto;
   padding-left: 28px;
 }
 
 /* Вторая строка */
 .footer-second-row {
-  margin-bottom: 63px;
+  margin-bottom: 62px;
 }
 
 .footer-second-row a {
@@ -1335,19 +1331,12 @@ main ul {
   color: rgba(255, 255, 255, 0.3);
 }
 
-/* Вторая строка - Адрес */
-.footer-adress {
-  width: 205px;
-}
-
 /* Вторая строка - Информационное меню */
 .main-footer .footer-info-menu {
   display: flex;
   flex-wrap: wrap;
-  width: 440px;
+  width: 470px;
   margin-top: 7px;
-  margin-left: -25px;
-
 
   font-family: "Gilory", Arial, sans-serif;
   font-size: 18px;
@@ -1359,16 +1348,13 @@ main ul {
   margin-right: 33px;
 }
 
-.footer-info-menu li:nth-child(3n) {
-  margin-right: 0;
-}
-
 /* Вторая строка - Связь */
 .footer-communication {
   display: flex;
-  justify-content: flex-end;
+  flex-direction: column;
+  align-items: flex-end;
   flex-wrap: wrap;
-  width: 164px;
+  /* padding-left: 25px; */
 }
 
 .main-footer .footer-phone-number {
@@ -1405,12 +1391,18 @@ main ul {
 }
 
 /* Третья строка - Авторские права*/
-.footer-third-row .footer-copyright:hover,
-.footer-third-row .footer-copyright:focus {
+.footer-copyright {
+  display: block;
+  width: 27px;
+  height: 35px;
+}
+
+.footer-copyright:hover,
+.footer-copyright:focus {
   opacity: 0.6;
 }
 
-.footer-third-row .footer-copyright:active {
+.footer-copyright:active {
   opacity: 0.3;
 }
 
