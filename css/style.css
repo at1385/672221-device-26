@@ -696,6 +696,7 @@ main ul {
 /* "О нас" и "Контакты" */
 .info-columns {
   display: flex;
+  flex-wrap: wrap;
   margin-bottom: 82px;
 }
 
