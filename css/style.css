@@ -1002,7 +1002,6 @@ main ul {
 
 /* Правая колонка - Каталог */
 .catalog {
-  margin-bottom: -11px;
   padding-top: 69px;
 }
 
@@ -1041,6 +1040,10 @@ main ul {
   flex-direction: column;
   width: 360px;
   margin-bottom: 46px;
+}
+
+.catalog-item:nth-last-child(-n+2) {
+  margin-bottom: 35px;
 }
 
 .catalog-item-row {
