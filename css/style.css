@@ -641,7 +641,16 @@ main ul {
 
 .brands-list {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.brands-item {
+  margin-right: 40px;
+}
+
+.brands-item:nth-child(4n) {
+  margin-right: 0;
 }
 
 .brands-item a:hover,
