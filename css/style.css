@@ -264,11 +264,42 @@ input[type="radio"].visually-hidden {
   letter-spacing: 0.2px;
 } */
 
-.user-login {
+.user-login,
+.user-profile {
+  position: relative;
+
+  display: block;
   margin-right: 20px;
   padding-left: 27px;
 
   letter-spacing: 0.2px;
+}
+
+.user-login::before,
+.user-profile::before {
+  content: "";
+  position: absolute;
+  top: 9px;
+  left: 0;
+
+  width: 13px;
+  height: 12px;
+
+  background-image: url("../img/icon-general-user.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.user-login:hover::before,
+.user-login:focus::before,
+.user-profile:hover::before,
+.user-profile:focus::before {
+  opacity: 0.6;
+}
+
+.user-login:active::before,
+.user-profile:active::before {
+  opacity: 0.3;
 }
 
 .header-user-account .user-logout {
@@ -286,30 +317,71 @@ input[type="radio"].visually-hidden {
 
 .header-shoping-functions {
   display: flex;
+  justify-content: space-between;
   flex-wrap: wrap;
   width: 220px;
 }
 
-.header-shoping-functions li {
-  margin-right: 31px;
-  width: 73px;
-  padding-left: 28px;
-}
-
 .header-shoping-functions li:nth-child(2n) {
   margin-right: 0;
-  width: auto;
-  padding-left: 28px;
 }
 
 .compare-function-item {
   margin-right: 31px;
-  width: 73px;
+}
+
+.compare-function-item a,
+.shoping-function-item a {
+  position: relative;
+
+  display: block;
   padding-left: 28px;
 }
 
-.shoping-function-item {
-  padding-left: 28px;
+.compare-link::before {
+  content: "";
+  position: absolute;
+  top: 11px;
+  left: 7px;
+
+  width: 10px;
+  height: 10px;
+
+  background-image: url("../img/icon-general-compare.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.compare-link:hover::before,
+.compare-link:focus::before {
+  opacity: 0.6;
+}
+
+.compare-link:active::before {
+  opacity: 0.3;
+}
+
+.cart-link::before {
+  content: "";
+  position: absolute;
+  top: 9px;
+  left: 5px;
+
+  width: 12px;
+  height: 12px;
+
+  background-image: url("../img/icon-general-cart.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.cart-link:hover::before,
+.cart-link:focus::before {
+  opacity: 0.6;
+}
+
+.cart-link:active::before {
+  opacity: 0.3;
 }
 
 /* 2-я строка */
