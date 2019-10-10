@@ -576,11 +576,9 @@ main ul {
 }
 
 .services-slider-controls {
-  display: flex;
-  flex-direction: column;
   width: 277px;
   min-height: 239px;
-  margin-right: 117px;
+  /* margin-right: 117px; */
   padding-top: 81px;
 
   border-right: 7px solid #000000;
@@ -612,6 +610,7 @@ main ul {
 
 .services-list {
   padding-top: 74px;
+  padding-left: 117px;
 }
 
 .services-item {
