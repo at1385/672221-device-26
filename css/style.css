@@ -536,11 +536,49 @@ main ul {
 
 /* Промо-слайдер */
 .promo-slider {
+  position: relative;
+
   min-height: 520px;
   margin-bottom: 72px;
 
   background-color: #f7e296;
   background-image: linear-gradient(#f7e296 111px, #ffffff 111px);
+}
+
+.promo-slider-controls {
+  position: absolute;
+  top: 327px;
+  right: 80px;
+
+  display: flex;
+  justify-content: space-between;
+  width: 81px;
+}
+
+.promo-slider-button {
+  width: 12px;
+  height: 12px;
+
+  background-color: transparent;
+  background-image: url("../img/icon-promoslider-button-off.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+
+  border: none;
+  cursor: pointer;
+}
+
+.promo-slider-button-active {
+  width: 12px;
+  height: 12px;
+
+  background-color: transparent;
+  background-image: url("../img/icon-promoslider-button-on.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+
+  border: none;
+  cursor: pointer;
 }
 
 .promo-slides-item {
