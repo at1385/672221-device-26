@@ -694,12 +694,29 @@ main ul {
 }
 
 .categories-item {
+  position: relative;
+
   width: 160px;
   margin-right: 40px;
   margin-bottom: 20px;
 }
 
-.categories-item::before {
+.categories-item-quadcopter {
+  margin-right: 0;
+}
+
+.categories-item a {
+  display: block;
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: 0.2px;
+}
+
+.categories-item a:active {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.categories-item a::before {
   content: "";
 
   display: block;
@@ -710,19 +727,103 @@ main ul {
   background-color: rgba(240, 197, 46, 0.5);
 }
 
-.categories-item-quadcopter {
-  margin-right: 0;
+.categories-item a:hover::before,
+.categories-item a:focus::before,
+.categories-item a:active::before {
+  background-color: rgba(240, 197, 46, 1);
 }
 
-.categories-list a {
-  display: block;
-  font-size: 18px;
-  line-height: 24px;
-  letter-spacing: 0.2px;
+.categories-item-vr a::after {
+  content: "";
+  position: absolute;
+  top: 52px;
+  left: 31px;
+
+  width: 97px;
+  height: 55px;
+
+  background-image: url("../img/icon-catolog-vr.svg");
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
-.categories-list a:active {
-  color: rgba(0, 0, 0, 0.3);
+.categories-item-selfie a::after {
+  content: "";
+  position: absolute;
+  top: 41px;
+  left: 38px;
+
+  width: 86px;
+  height: 117px;
+
+  background-image: url("../img/icon-catolog-selfie.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.categories-item-actioncam a::after {
+  content: "";
+  position: absolute;
+  top: 38px;
+  left: 49px;
+
+  width: 71px;
+  height: 87px;
+
+  background-image: url("../img/icon-catolog-actioncam.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.categories-item-fittracker a::after {
+  content: "";
+  position: absolute;
+  top: 50px;
+  left: 28px;
+
+  width: 107px;
+  height: 65px;
+
+  background-image: url("../img/icon-catalog-fittracker.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.categories-item-smartwatch a::after {
+  content: "";
+  position: absolute;
+  top: 32px;
+  left: 55px;
+
+  width: 56px;
+  height: 98px;
+
+  background-image: url("../img/icon-catolog-smartwatch.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.categories-item-quadcopter a::after {
+  content: "";
+  position: absolute;
+  top: 49px;
+  left: 13px;
+
+  width: 132px;
+  height: 69px;
+
+  background-image: url("../img/icon-catolog-quadcopter.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.categories-item-vr a:active::after,
+.categories-item-selfie a:active::after,
+.categories-item-actioncam a:active::after,
+.categories-item-fittracker a:active::after,
+.categories-item-smartwatch a:active::after,
+.categories-item-quadcopter a:active::after {
+  opacity: 0.3;
 }
 
 /* Слайдер сервисов */
