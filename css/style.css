@@ -386,12 +386,19 @@ input[type="radio"].visually-hidden {
 
 /* 2-я строка */
 .header-second-row {
-  padding-bottom: 49px;
+  padding-bottom: 52px;
 }
 
 /* 2-я строка - Каталог товаров */
 .main-site-navigation {
   width: 500px;
+  margin-top: 3px;
+  margin-right: 40px;
+}
+
+.main-site-navigation ul {
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .header-catalog-menu {
@@ -413,6 +420,30 @@ input[type="radio"].visually-hidden {
   text-transform: uppercase;
 }
 
+.catalog-menu-link {
+  position: relative;
+
+  display: block;
+  width: 225px;
+  padding-right: 25px;
+}
+
+.catalog-menu-link::after {
+  content: "";
+  position: absolute;
+  top: 3px;
+  right: 3px;
+
+  width: 16px;
+  height: 16px;
+
+  background-image: url("../img/icon-general-plus.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+
+  opacity: 0.3;
+}
+
 .header-catalog-menu .current-page,
 .header-catalog-menu .current-page:hover {
   color: rgba(0, 0, 0, 0.3);
@@ -422,16 +453,17 @@ input[type="radio"].visually-hidden {
 
 .products-navigation-wrapper {
   position: absolute;
-  top: 21px;
+  top: 20px;
   left: -60px;
   z-index: 1;
 
   display: none;
   flex-wrap: wrap;
+  align-items: flex-start;
   width: 1040px;
   min-height: 100px;
   padding: 30px 60px;
-  padding-bottom: 12px;
+  padding-bottom: 9px;
 
   background-color: #f7e296;
 }
@@ -449,15 +481,29 @@ input[type="radio"].visually-hidden {
 }
 
 .products-navigation li {
-  margin-bottom: 6px;
+  margin-bottom: 5px;
+}
+
+.products-navigation a {
+  display: block;
 }
 
 /* 2-я строка - Правая колонка */
-.header-services {
+.header-second-row .header-right-column {
+  margin-top: 3px;
+}
+
+.header-second-row .header-services {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
-  width: 274px;
+  width: 360px;
+  margin-right: 20px;
+}
+
+.header-services a {
+  display: block;
+  width: 140px;
+  margin-right: 20px;
 }
 
 .header-contacts {
@@ -468,7 +514,7 @@ input[type="radio"].visually-hidden {
 }
 
 .header-contacts a {
-  margin-top: 3px;
+  display: block;
 }
 
 /* MAIN-PAGE */
