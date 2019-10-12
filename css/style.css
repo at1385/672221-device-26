@@ -950,7 +950,7 @@ main ul {
 
 /* Бренды товаров */
 .brands-of-products {
-  margin-bottom: 93px;
+  margin-bottom: 83px;
 }
 
 .brands-list {
@@ -1023,8 +1023,23 @@ main ul {
 
 .about-us,
 .contacts {
+  position: relative;
+
   width: 560px;
-  padding-top: 43px;
+  padding-top: 53px;
+}
+
+.about-us::before,
+.contacts::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 80px;
+  height: 7px;
+
+  background-color: #000000;
 }
 
 .about-us h2,
@@ -1050,11 +1065,29 @@ main ul {
 }
 
 .shipping-companies-list {
-  margin-left: 36px;
   margin-bottom: 55px;
 
   font-size: 16px;
   line-height: 40px;
+}
+
+.shipping-companies-list li {
+  position: relative;
+
+  padding-left: 36px;
+}
+
+.shipping-companies-list li::before {
+  content: "";
+  position: absolute;
+  top: 16px;
+  left: 0;
+
+  width: 4px;
+  height: 4px;
+
+  border: 2px solid #e5e5e5;
+  border-radius: 50%;
 }
 
 .contacts p {
