@@ -1001,6 +1001,13 @@ main ul {
   background-image: url("../img/brand-vive-color.png");
 }
 
+.brands-item-dji a:active,
+.brands-item-spgadgets a:active,
+.brands-item-gopro a:active,
+.brands-item-vive a:active {
+  opacity: 0.3;
+}
+
 .brands-item img:hover,
 .brands-item img:focus,
 .brands-item img:active {
