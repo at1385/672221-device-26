@@ -744,7 +744,7 @@ main ul {
 
   background-image: url("../img/icon-catolog-vr.svg");
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: 0 0;
 }
 
 .categories-item-selfie a::after {
@@ -758,7 +758,7 @@ main ul {
 
   background-image: url("../img/icon-catolog-selfie.svg");
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: 0 0;
 }
 
 .categories-item-actioncam a::after {
@@ -772,7 +772,7 @@ main ul {
 
   background-image: url("../img/icon-catolog-actioncam.svg");
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: 0 0;
 }
 
 .categories-item-fittracker a::after {
@@ -786,7 +786,7 @@ main ul {
 
   background-image: url("../img/icon-catalog-fittracker.svg");
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: 0 0;
 }
 
 .categories-item-smartwatch a::after {
@@ -800,7 +800,7 @@ main ul {
 
   background-image: url("../img/icon-catolog-smartwatch.svg");
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: 0 0;
 }
 
 .categories-item-quadcopter a::after {
@@ -814,7 +814,7 @@ main ul {
 
   background-image: url("../img/icon-catolog-quadcopter.svg");
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: 0 0;
 }
 
 .categories-item-vr a:active::after,
@@ -898,7 +898,7 @@ main ul {
 
   background-image: url("../img/icon-serviceslider-delivery.svg");
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: 0 0;
 }
 
 .services-item-warranty::after {
@@ -912,7 +912,7 @@ main ul {
 
   background-image: url("../img/icon-serviceslider-warranty.svg");
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: 0 0;
 }
 
 .services-item-credit::after {
@@ -926,11 +926,11 @@ main ul {
 
   background-image: url("../img/icon-serviceslider-credit.svg");
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: 0 0;
 }
 
-.services-item-credit,
-.services-item-warranty {
+.services-item-warranty,
+.services-item-credit {
   display: none;
 }
 
@@ -1141,11 +1141,35 @@ main ul {
 }
 
 .breadcrumbs li {
+  position: relative;
+
   margin-right: 37px;
 
   font-size: 14px;
   line-height: 24px;
   letter-spacing: 0.2px;
+}
+
+.breadcrumbs li:last-child {
+  margin-right: 0;
+}
+
+.breadcrumbs li::after {
+  content: "";
+  position: absolute;
+  top: 10px;
+  right: -19px;
+
+  width: 4px;
+  height: 7px;
+
+  background-image: url("../img/icon-breadcrumbs-arrow.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.breadcrumbs-current::after {
+  display: none;
 }
 
 .breadcrumbs a,
