@@ -878,15 +878,59 @@ main ul {
 }
 
 .services-item {
-  padding-right: 240px;
+  position: relative;
+
+  padding-right: 300px;
 }
 
 .services-item p {
   width: 460px;
 }
 
-.services-item-warranty,
-.services-item-credit {
+.services-item-delivery::after {
+  content: "";
+  position: absolute;
+  top: 11px;
+  right: 67px;
+
+  width: 136px;
+  height: 164px;
+
+  background-image: url("../img/icon-serviceslider-delivery.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.services-item-warranty::after {
+  content: "";
+  position: absolute;
+  top: -13px;
+  right: 47px;
+
+  width: 171px;
+  height: 195px;
+
+  background-image: url("../img/icon-serviceslider-warranty.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.services-item-credit::after {
+  content: "";
+  position: absolute;
+  top: -13px;
+  right: 71px;
+
+  width: 156px;
+  height: 188px;
+
+  background-image: url("../img/icon-serviceslider-credit.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.services-item-credit,
+.services-item-warranty {
   display: none;
 }
 
