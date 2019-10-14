@@ -582,12 +582,57 @@ main ul {
 }
 
 .promo-slides-item {
+  position: relative;
+
   display: flex;
   justify-content: space-between;
 }
 
-.promo-slide-fittracker,
-.promo-slide-quadcopter {
+.promo-slides-item::before {
+  content: "";
+  position: absolute;
+  top: 37px;
+  right: 460px;
+
+  width: 100px;
+  height: 7px;
+
+  background-color: #ffffff;
+}
+
+.promo-slides-item::after {
+  content: "";
+  position: absolute;
+  top: 60px;
+  right: 47px;
+
+  font-family: "Gilory", Arial, sans-serif;
+  font-size: 179.2px;
+  font-weight: 800;
+  color: #ffffff;
+  letter-spacing: 1px;
+}
+
+.promo-slide-selfie::after {
+  content: "01";
+}
+
+.promo-slide-fittracker::after {
+  content: "02";
+  right: 45px;
+
+  letter-spacing: 3.5px;
+}
+
+.promo-slide-quadcopter::after {
+  content: "03";
+  right: 45px;
+
+  letter-spacing: 3.5px;
+}
+
+.promo-slide-selfie,
+.promo-slide-fittracker {
   display: none;
 }
 
@@ -630,6 +675,9 @@ main ul {
 }
 
 .promo-slider-slogan {
+  position: relative;
+  z-index: 1;
+
   margin-top: 79px;
   margin-bottom: 19px;
 
