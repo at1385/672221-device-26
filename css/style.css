@@ -1628,6 +1628,24 @@ main ul {
   margin-bottom: 46px;
 }
 
+.catalog-item-new {
+  position: relative;
+}
+
+.catalog-item-new::before {
+  content: "";
+  position: absolute;
+  top: 28px;
+  right: 27px;
+
+  width: 60px;
+  height: 61px;
+
+  background-image: url("../img/icon-product-new.png");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
 .catalog-item:nth-last-child(-n+2) {
   margin-bottom: 35px;
 }
