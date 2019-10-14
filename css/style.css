@@ -1877,7 +1877,7 @@ main ul {
 
 /* Первая строка */
 .footer-first-row {
-  padding-top: 65px;
+  padding-top: 63px;
   margin-bottom: 30px;
 }
 
@@ -1899,6 +1899,7 @@ main ul {
   display: block;
   width: 163px;
   height: 35px;
+  margin-top: 2px;
 }
 
 .footer-first-row .footer-logo:hover,
@@ -1929,12 +1930,28 @@ main ul {
 }
 
 .footer-user-account a {
-  margin-right: 37px;
+  margin-right: 35px;
   padding-left: 28px;
+}
+
+.footer-user-account .user-login::before {
+  left: 1px;
+
+  background-image: url("../img/icon-general-user-orange.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
 }
 
 .footer-user-account .user-profile {
   margin-right: 18px;
+}
+
+.footer-user-account .user-profile::before {
+  left: 1px;
+
+  background-image: url("../img/icon-general-user-orange.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
 }
 
 .footer-user-account .user-logout {
@@ -1961,7 +1978,18 @@ main ul {
 
 .footer-shoping-functions li:nth-child(2n) {
   margin-right: 0;
-  padding-left: 28px;
+}
+
+.footer-shoping-functions .compare-link::before {
+  background-image: url("../img/icon-general-compare-orange.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.footer-shoping-functions .cart-link::before {
+  background-image: url("../img/icon-general-cart-orange.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
 }
 
 /* Вторая строка */
@@ -2019,7 +2047,21 @@ main ul {
 
 /* Третья строка */
 .footer-third-row {
-  padding-bottom: 65px;
+  position: relative;
+
+  padding-bottom: 57px;
+}
+
+.footer-third-row::before {
+  content: "";
+  position: absolute;
+  top: 14px;
+  left: 0;
+
+  width: 80px;
+  height: 7px;
+
+  background-color: #ffc600;
 }
 
 .footer-third-row a {
@@ -2038,11 +2080,54 @@ main ul {
 /* Третья строка - Социальные сети*/
 .main-footer .footer-social {
   display: flex;
-  margin-left: 500px;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 440px;
+  margin-left: 360px;
 }
 
 .footer-social li {
   margin-right: 23px;
+  margin-bottom: 10px;
+}
+
+.footer-social li:last-child {
+  margin-right: 0;
+}
+
+.social-button {
+  display: block;
+  width: 32px;
+  height: 32px;
+
+  opacity: 0.3;
+}
+
+.social-button:hover,
+.social-button:focus {
+  opacity: 0.6;
+}
+
+.social-button:active {
+  opacity: 0.1;
+}
+
+.social-button-fb {
+  background-image: url("../img/icon-social-fb.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.social-button-inst {
+  background-image: url("../img/icon-social-inst.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.social-button-tw {
+  background-image: url("../img/icon-social-tw.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
 }
 
 /* Третья строка - Авторские права*/
