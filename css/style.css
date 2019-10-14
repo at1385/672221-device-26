@@ -1234,16 +1234,25 @@ main ul {
   background-color: #dcdcdc;
 }
 
-.filters-form {
-  padding-left: 60px;
-}
-
 .filters-form fieldset {
+  position: relative;
+
   margin: 0;
   margin-bottom: 45px;
   padding: 0;
 
   border: none;
+}
+
+.filters-form fieldset::before {
+  content: "";
+  position: absolute;
+  top: -53px;
+
+  width: 200px;
+  height: 2px;
+
+  background-color: #000000;
 }
 
 .filters-form legend {
@@ -1267,14 +1276,69 @@ main ul {
 }
 
 /* Левая колонка - Фильтры - Стоимость*/
+.filters-form .price-filter {
+  padding-left: 54px;
+}
+
+.filters-form .price-filter::before {
+  top: -61px;
+  left: 59px;
+}
+
+.price-filter legend {
+  margin-left: 5px;
+  margin-bottom: 25px;
+}
+
 .range-filter-controls {
-  /* temp */
-  height: 45px;
+  position: relative;
+
+  width: 200px;
+  padding: 10px 6px;
+}
+
+.range-filter-controls .scale {
+  height: 2px;
+
+  background-color: #dbdbdb;
+}
+
+.range-filter-controls .bar {
+  width: 60%;
+  height: 2px;
+
+  background-color: #91c92f;
+}
+
+.range-filter-controls .toggle {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 20px;
+  height: 23px;
+
+  background-image: url("../img/icon-filter-slider.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+
+  cursor: pointer;
+}
+
+.range-filter-controls .toggle-min {
+  top: 0;
+  left: 0;
+}
+
+.range-filter-controls .toggle-min {
+  top: 0;
+  left: 113px;
 }
 
 .range-filter-price {
   display: flex;
   width: 200px;
+  margin-left: 5px;
 }
 
 .range-filter-price label,
@@ -1287,7 +1351,6 @@ main ul {
 
 .range-filter-price label {
   display: flex;
-  align-items: baseline;
   width: 90px;
 
   cursor: default;
@@ -1296,12 +1359,19 @@ main ul {
 .range-filter-price input {
   box-sizing: border-box;
   width: 65px;
+  height: 24px;
   margin-left: 3px;
+
   background-color: #eeeeee;
   border: none;
 }
 
 /* Левая колонка - Фильтры - Цвет и Bluetooth*/
+.filters-form .color-filter,
+.filters-form .bluetooth-filter {
+  padding-left: 59px;
+}
+
 .color-filter legend,
 .bluetooth-filter legend {
   margin-bottom: 17px;
@@ -1309,15 +1379,116 @@ main ul {
 
 .color-filter label,
 .bluetooth-filter label {
+  display: block;
   padding-left: 38px;
 }
 
-.filters-form  .bluetooth-filter {
+.color-filter li,
+.bluetooth-filter li {
+  position: relative;
+}
+
+.filter-input-checkbox + label::before {
+  content: "";
+  position: absolute;
+  top: 9px;
+  left: 0;
+
+  width: 23px;
+  height: 23px;
+
+  background-image: url("../img/icon-filter-checkbox-off.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.filter-input-checkbox:checked + label::before {
+  width: 27px;
+
+  background-image: url("../img/icon-filter-checkbox-on.svg");
+}
+
+.filter-input-checkbox:hover + label::before,
+.filter-input-checkbox:focus + label::before {
+  opacity: 0.6;
+}
+
+.filter-input-checkbox:active + label::before {
+  width: 27px;
+
+  background-image: url("../img/icon-filter-checkbox-on.svg");
+
+  opacity: 1;
+}
+
+.filter-input-checkbox:checked:active + label::before {
+  background-image: url("../img/icon-filter-checkbox-off.svg");
+}
+
+.filter-input-checkbox:disabled + label::before {
+  opacity: 0.25;
+
+  cursor: default;
+}
+
+.filter-input-checkbox:checked:disabled + label::before {
+  width: 27px;
+
+  background-image: url("../img/icon-filter-checkbox-on.svg");
+}
+
+.filters-form .bluetooth-filter {
   margin-bottom: 31px;
+}
+
+.filter-input-radio + label::before {
+  content: "";
+  position: absolute;
+  top: 7px;
+  left: 0;
+
+  width: 25px;
+  height: 25px;
+
+  background-image: url("../img/icon-filter-radio-off.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.filter-input-radio:checked + label::before {
+  background-image: url("../img/icon-filter-radio-on.svg");
+}
+
+.filter-input-radio:hover + label::before,
+.filter-input-radio:focus + label::before {
+  opacity: 0.6;
+}
+
+.filter-input-radio:active + label::before {
+  background-image: url("../img/icon-filter-radio-on.svg");
+
+  opacity: 1;
+}
+
+.filter-input-radio:checked:active + label::before {
+  background-image: url("../img/icon-filter-radio-off.svg");
+}
+
+.filter-input-radio:disabled + label::before {
+  background-image: url("../img/icon-filter-radio-off.svg");
+
+  opacity: 0.25;
+
+  cursor: default;
+}
+
+.filter-input-radio:checked:disabled + label::before {
+  background-image: url("../img/icon-filter-radio-on.svg");
 }
 
 .filters-button {
   width: 200px;
+  margin-left: 59px;
 }
 
 /* Правая колонка - Сортировка товаров */
