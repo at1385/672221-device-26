@@ -67,11 +67,12 @@ input[type="radio"].visually-hidden {
 }
 
 .button {
+  display: inline-block;
   min-height: 40px;
 
   font-family: "Gilory", Arial, sans-serif;
   font-size: 18px;
-  line-height: 40px;
+  line-height: 24px;
   font-weight: 800;
   color: #000000;
   text-align: center;
@@ -726,6 +727,8 @@ main ul {
 .promo-slide-info-button {
   width: 220px;
   margin-bottom: 50px;
+
+  line-height: 40px;
 }
 
 /* Категории товаров */
@@ -1150,8 +1153,9 @@ main ul {
 }
 
 .info-sections-button {
-  display: block;
   width: 260px;
+
+  line-height: 40px;
 }
 
 /* INNER-PAGE */
@@ -2096,8 +2100,6 @@ main ul {
   flex-wrap: wrap;
   width: 440px;
   margin-left: 360px;
-
-  text-align: center;
 }
 
 .footer-social li {
