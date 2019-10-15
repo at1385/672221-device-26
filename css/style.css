@@ -2161,14 +2161,45 @@ main ul {
 }
 
 /* MODALS */
+.modal {
+  position: relative;
+
+  box-shadow: 0px 10px 20px 0 rgba(4, 6, 6, 0.2);
+}
+
+.modal-close {
+  position: absolute;
+  top: 22px;
+  right: 20px;
+
+  width: 55px;
+  height: 55px;
+
+  background-image: url("../img/icon-modal-close.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+
+  background-color: transparent;
+
+  border: none;
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+.modal-close:hover,
+.modal-close:focus {
+  opacity: 1;
+}
+
+.modal-close:focus {
+  opacity: 0.3;
+}
+
 /* write-us */
 .modal-write-us {
-  width: 760px;
+  width: 758px;
   padding: 92px 100px;
   padding-bottom: 77px;
-
-  /* temp */
-  border: 1px solid black;
 }
 
 .modal-write-us p {
@@ -2177,7 +2208,7 @@ main ul {
 
 .write-us-form-wrapper {
   display: flex;
-  margin-bottom: 34px;
+  margin-bottom: 33px;
 }
 
 .write-us-form .user-info {
@@ -2203,7 +2234,7 @@ main ul {
 .write-us-form textarea {
   box-sizing: border-box;
   width: 100%;
-  padding: 15px 20px;
+  padding: 13px 20px;
 
   font-size: 14px;
   line-height: 18px;
@@ -2212,6 +2243,14 @@ main ul {
 
   background-color: rgba(229, 229, 229, 0.5);
   border: none;
+}
+
+.write-us-form input {
+  height: 50px;
+}
+
+.write-us-form textarea {
+  height: 156px;
 }
 
 .write-us-form input:hover,
@@ -2228,18 +2267,18 @@ main ul {
 }
 
 .write-us-form .textarea-wrapper {
-  margin-bottom: 36px;
+  margin-bottom: 35px;
 }
 
 .textarea-wrapper label {
   letter-spacing: 0.3px;
 }
 
-/* .write-us-form input:not(:focus):required,
-.write-us-form textarea:not(:focus):required {
+/* .write-us-form input:required,
+.write-us-form textarea:required {
   background-color: #f6dada;
   box-shadow: none;
-}*/
+} */
 
 .write-us-form .invalid-value,
 .write-us-form .invalid-value:not(:focus):hover {
@@ -2254,7 +2293,4 @@ main ul {
 .modal-map {
   width: 960px;
   height: 560px;
-
-  /* temp */
-  border: 1px solid black;
 }
