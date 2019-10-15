@@ -1759,10 +1759,11 @@ main ul {
 }
 
 .catalog-item-hover .cart-button {
-  display: block;
   width: 200px;
   margin-top: 43px;
   margin-bottom: 6px;
+
+  line-height: 40px;
 }
 
 .catalog-item-hover .compare {
