@@ -2297,3 +2297,7 @@ main ul {
   width: 960px;
   height: 560px;
 }
+
+.modal-map iframe {
+  border: none;
+}
