@@ -630,8 +630,8 @@ main ul {
   letter-spacing: 3.5px;
 }
 
-.promo-slide-selfie,
-.promo-slide-fittracker {
+.promo-slide-fittracker,
+.promo-slide-quadcopter {
   display: none;
 }
 
