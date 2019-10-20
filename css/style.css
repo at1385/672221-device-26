@@ -315,13 +315,6 @@ input[type="radio"].visually-hidden {
   letter-spacing: 0.2px;
 }
 
-/* .user-profile {
-  margin-right: 20px;
-  padding-left: 27px;
-
-  letter-spacing: 0.2px;
-} */
-
 .user-login,
 .user-profile {
   position: relative;
@@ -1948,7 +1941,6 @@ main ul {
 /* Общие */
 .main-footer {
   background-color: #464646;
-  /* margin-top: 82px; */
 }
 
 .main-footer p,
