@@ -748,6 +748,11 @@ main ul {
   letter-spacing: 0.1px;
 }
 
+.promo-slide-fittracker .promo-slider-info,
+.promo-slide-quadcopter .promo-slider-info {
+  width: 455px;
+}
+
 .promo-right-column-wrapper,
 .promo-slider-table tbody {
   display: flex;
@@ -812,9 +817,15 @@ main ul {
 
 .categories-item a {
   display: block;
+
   font-size: 18px;
   line-height: 24px;
   letter-spacing: 0.2px;
+}
+
+.categories-item-selfie a {
+  width: 125px;
+  padding-right: 35px;
 }
 
 .categories-item a:active {
@@ -992,6 +1003,14 @@ main ul {
   width: 460px;
 }
 
+.services-item-credit p {
+  width: 435px;
+}
+
+.services-item-credit {
+  padding-right: 325px;
+}
+
 .services-item-delivery::after {
   content: "";
   position: absolute;
@@ -1035,7 +1054,7 @@ main ul {
 }
 
 .services-item-warranty,
-.services-item-credit {
+.services-item-delivery {
   display: none;
 }
 
@@ -1778,6 +1797,11 @@ main ul {
 
 .catalog-item-heading {
   width: 261px;
+}
+
+.catalog-selfie-pro .catalog-item-heading {
+  width: 240px;
+  padding-right: 20px;
 }
 
 .catalog-item-price {
