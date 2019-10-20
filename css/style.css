@@ -146,6 +146,11 @@ input[type="radio"].visually-hidden {
   margin-left: 60px;
 }
 
+.header-logo img {
+  width: 163px;
+  height: 35px;
+}
+
 .main-header .header-logo:hover,
 .main-header .header-logo:focus {
   opacity: 0.6;
@@ -695,14 +700,29 @@ main ul {
   padding-right: 15px;
 }
 
+.promo-selfie-image img {
+  width: 384px;
+  height: 486px;
+}
+
 .promo-fittracker-image {
   padding-right: 2px;
   padding-top: 12px;
 }
 
+.promo-fittracker-image img {
+  width: 345px;
+  height: 485px;
+}
+
 .promo-quadcopter-image {
   padding-left: 8px;
   padding-top: 65px;
+}
+
+.promo-fittracker-image img {
+  width: 526px;
+  height: 334px;
 }
 
 .promo-slider-right-column {
@@ -1047,8 +1067,8 @@ main ul {
   background-position: 0 0;
 }
 
-.services-item-warranty,
-.services-item-delivery {
+.services-item-credit,
+.services-item-warranty {
   display: none;
 }
 
@@ -1081,6 +1101,11 @@ main ul {
   margin-right: 40px;
 }
 
+.brands-item img {
+  width: 260px;
+  height: 100px;
+}
+
 .brands-item:nth-child(4n) {
   margin-right: 0;
 }
@@ -1088,7 +1113,7 @@ main ul {
 .brands-item a:hover,
 .brands-item a:focus,
 .brands-item a:active {
-  display: inline-block;
+  display: block;
 
   background-color: transparent;
   background-position: 0 0;
@@ -1219,6 +1244,11 @@ main ul {
   width: 560px;
   height: 222px;
   margin-bottom: 69px;
+}
+
+.map-image img {
+  width: 560px;
+  height: 222px;
 }
 
 .info-sections-button {
@@ -1810,6 +1840,11 @@ main ul {
   height: 380px;
 }
 
+.catalog-item-image img {
+  width: 360px;
+  height: 380px;
+}
+
 /* Правая колонка - Каталог - Блок при наведении */
 .catalog-item-hover {
   position: absolute;
@@ -1990,6 +2025,11 @@ main ul {
   width: 163px;
   height: 35px;
   margin-top: 2px;
+}
+
+.footer-logo img {
+  width: 163px;
+  height: 35px;
 }
 
 .footer-first-row .footer-logo:hover,
@@ -2223,6 +2263,11 @@ main ul {
 /* Третья строка - Авторские права*/
 .footer-copyright {
   display: block;
+  width: 27px;
+  height: 35px;
+}
+
+.footer-copyright img {
   width: 27px;
   height: 35px;
 }
