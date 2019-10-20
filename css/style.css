@@ -185,17 +185,19 @@ input[type="radio"].visually-hidden {
 
 /* 1-я строка - Форма поиска */
 .site-search {
+  position: relative;
+
   display: flex;
   height: 48px;
 }
 
-.site-search input {
+.search-input {
   box-sizing: border-box;
-  width: 356px;
   padding-left: 38px;
   padding-right: 38px;
+  width: 356px;
 
-  color: rgba(0, 0, 0, 0.3);
+  color: rgba(0, 0, 0, 1);
 
   background-color: #f7e296;
   background-image: url("../img/icon-general-search.svg");
@@ -203,22 +205,68 @@ input[type="radio"].visually-hidden {
   background-position: 3px center;
 
   border: none;
+  border-bottom: 2px solid #000000;
 }
 
-.site-search input:hover {
+.search-input:invalid {
+  box-shadow: none;
+  border-bottom: 2px solid transparent;
+}
+
+.search-input::-webkit-search-cancel-button {
+  display: none;
+}
+
+.search-input::-ms-clear {
+  width: 0;
+  height: 0;
+}
+
+@-webkit-keyframes autofill {
+  to {
+    color: inherit;
+
+    background-color: #f7e296;
+    background-image: url("../img/icon-general-search.svg");
+  }
+}
+
+.search-input:-webkit-autofill {
+  -webkit-animation-name: autofill;
+  -webkit-animation-fill-mode: both;
+}
+
+.site-search label,
+.search-input[value=""] + label {
+  position: absolute;
+  top: 7px;
+  left: 38px;
+
+  color: rgba(0, 0, 0, 0.3);
+  letter-spacing: 0.2px;
+
+  pointer-events: none;
+}
+
+.search-input:hover + label {
   color: rgba(0, 0, 0, 0.6);
 }
 
-.site-search input:focus {
+.search-input:focus {
   color: rgba(0, 0, 0, 1);
 
   border-bottom: 2px solid #000000;
+  outline: none;
+}
+
+.search-input:focus + label,
+.search-input:valid + label {
+  color: transparent;
 }
 
 .search-button {
   display: none;
-  padding-left: 19px;
-  padding-right: 19px;
+  padding: 0 19px;
 
   text-align: center;
   vertical-align: middle;
@@ -227,6 +275,13 @@ input[type="radio"].visually-hidden {
   border: 2px solid #000000;
 
   cursor: pointer;
+  outline: none;
+}
+
+.search-button > span {
+  position: relative;
+  top: 0;
+  left: 0;
 }
 
 .search-button:hover,
@@ -240,7 +295,8 @@ input[type="radio"].visually-hidden {
   color: rgba(255, 255, 255, 0.3);
 }
 
-.site-search input:focus + .search-button {
+.search-input:focus ~ .search-button,
+.search-input:valid ~ .search-button {
   display: block;
 }
 
