@@ -2179,7 +2179,8 @@ main ul {
 .footer-third-row {
   position: relative;
 
-  padding-bottom: 57px;
+  justify-content: flex-start;
+  padding-bottom: 58px;
 }
 
 .footer-third-row::before {
@@ -2209,18 +2210,22 @@ main ul {
 
 /* Третья строка - Социальные сети*/
 .main-footer .footer-social {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
   width: 440px;
   margin-left: 360px;
+  margin-right: 333px;
+
+  text-align: center;
 }
 
 .footer-social li {
-  margin-right: 23px;
+  display: inline-block;
+  margin-right: 19px;
   margin-bottom: 10px;
+
+  vertical-align: top;
 }
 
+.footer-social li:nth-child(8n),
 .footer-social li:last-child {
   margin-right: 0;
 }
