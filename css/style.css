@@ -156,7 +156,8 @@ input[type="radio"].visually-hidden {
   opacity: 0.6;
 }
 
-.main-header .header-logo:active {
+.main-header .header-logo:active,
+.header-logo img:active {
   opacity: 0.3;
 }
 
@@ -1120,6 +1121,12 @@ main ul {
   background-repeat: no-repeat;
 }
 
+.brands-item img:hover,
+.brands-item img:focus,
+.brands-item img:active {
+  opacity: 0;
+}
+
 .brands-item-dji a:hover,
 .brands-item-dji a:focus,
 .brands-item-dji a:active {
@@ -1144,17 +1151,8 @@ main ul {
   background-image: url("../img/brand-vive-color.png");
 }
 
-.brands-item-dji a:active,
-.brands-item-spgadgets a:active,
-.brands-item-gopro a:active,
-.brands-item-vive a:active {
+.brands-item a:active {
   opacity: 0.3;
-}
-
-.brands-item img:hover,
-.brands-item img:focus,
-.brands-item img:active {
-  opacity: 0;
 }
 
 /* "О нас" и "Контакты" */
@@ -1769,7 +1767,8 @@ main ul {
   color: #000000;
 }
 
-.catalog-list a:active {
+.catalog-list a:active,
+.catalog-item-heading h3:active {
   color: rgba(0, 0, 0, 0.3);
 }
 
@@ -2037,7 +2036,8 @@ main ul {
   opacity: 0.6;
 }
 
-.footer-first-row .footer-logo:active {
+.footer-first-row .footer-logo:active,
+.footer-logo img:active {
   opacity: 0.3;
 }
 
@@ -2270,6 +2270,8 @@ main ul {
   display: block;
   width: 27px;
   height: 35px;
+
+  opacity: 1;
 }
 
 .footer-copyright img {
@@ -2282,7 +2284,8 @@ main ul {
   opacity: 0.6;
 }
 
-.footer-copyright:active {
+.footer-copyright:active,
+.footer-copyright img:active {
   opacity: 0.3;
 }
 
