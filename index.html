@@ -265,7 +265,7 @@
           <section class="contacts">
             <h2>Контакты</h2>
             <p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
-            <a class="map-image" href="map.html">
+            <a class="map-link" href="map.html">
               <img src="img/map.png" width="560" height="222" alt="Офис интернет-магазина «DEVICE» находится по адресу: г. Москва, ул. Строителей, 15">
             </a>
             <a class="button info-sections-button write-us-link" href="write-us.html">Напишите нам</a>
@@ -344,18 +344,18 @@
         <div class="write-us-form-wrapper">
           <p class="user-info">
             <label for="username-id">Ваше имя:</label>
-            <input id="username-id" class="invalid-value" type="text" name="username" placeholder="Имя Фамилия" required>
+            <input id="username-id" class="write-us-input" type="text" name="username" placeholder="Имя Фамилия" required>
           </p>
           <p class="user-info">
             <label for="user-email-id">Ваш e-mail:</label>
-            <input id="user-email-id" type="email" name="user-email" placeholder="email@example.com" required>
+            <input id="user-email-id" class="write-us-input" type="text" name="user-email" placeholder="email@example.com" required>
           </p>
         </div>
         <p class="textarea-wrapper">
           <label for="text-letter-id">Текст письма:</label>
-          <textarea id="text-letter-id" name="text-letter" rows="6" placeholder="В свободной форме" required></textarea>
+          <textarea id="text-letter-id" class="write-us-textarea" name="text-letter" rows="6" placeholder="В свободной форме" required></textarea>
         </p>
-        <button class="button write-us-button" type="submit" name="write-us-button"><span>Отправить</span></button>
+        <button class="button write-us-button" type="submit" name="write-us-button" formnovalidate><span>Отправить</span></button>
       </form>
       <button class="modal-close" type="button"><span class="visually-hidden">Закрыть</span></button>
     </section>
@@ -368,6 +368,6 @@
     </section>
 
     <script src="js/write.js"></script>
-    <!-- <script src="js/map-popup.js"></script> -->
+    <script src="js/map.js"></script>
   </body>
 </html>

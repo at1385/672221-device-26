@@ -237,7 +237,7 @@ input[type="radio"].visually-hidden {
   height: 0;
 }
 
-@-webkit-keyframes autofill {
+@-webkit-keyframes autofill-search {
   to {
     color: inherit;
 
@@ -247,7 +247,7 @@ input[type="radio"].visually-hidden {
 }
 
 .search-input:-webkit-autofill {
-  -webkit-animation-name: autofill;
+  -webkit-animation-name: autofill-search;
   -webkit-animation-fill-mode: both;
 }
 
@@ -1245,14 +1245,14 @@ main ul {
   letter-spacing: 0.1px;
 }
 
-.contacts .map-image {
+.contacts .map-link {
   display: block;
   width: 560px;
   height: 222px;
   margin-bottom: 69px;
 }
 
-.map-image img {
+.map-link img {
   width: 560px;
   height: 222px;
 }
@@ -2298,8 +2298,52 @@ main ul {
 }
 
 /* MODALS */
+@keyframes modal-open {
+  0% {
+    transform: translateY(-2000px);
+  }
+
+  70% {
+    transform: translateY(30px);
+  }
+
+  90% {
+    transform: translateY(-10px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes modal-error {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translateX(-10px);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translateX(10px);
+  }
+}
+
 .modal {
   position: fixed;
+  top: 50%;
+  left: 50%;
+  margin-top: -280px;
+  margin-left: -480px;
   z-index: 10;
 
   display: none;
@@ -2310,6 +2354,12 @@ main ul {
 
 .modal-show {
   display: block;
+
+  animation: modal-open 0.6s;
+}
+
+.modal-error {
+  animation: modal-error 0.6s;
 }
 
 .modal-close {
@@ -2342,12 +2392,7 @@ main ul {
 
 /* write-us */
 .modal-write-us {
-  top: 50%;
-  left: 50%;
-
   width: 758px;
-  margin-top: -280px;
-  margin-left: -480px;
   padding: 92px 100px;
   padding-bottom: 77px;
 }
@@ -2409,6 +2454,28 @@ main ul {
   background-color: rgba(229, 229, 229, 0.5);
   box-shadow: none;
   border: 3px solid transparent;
+}
+
+.write-us-input::-webkit-search-cancel-button {
+  display: none;
+}
+
+.write-us-input::-ms-clear {
+  width: 0;
+  height: 0;
+}
+
+@-webkit-keyframes autofill-write {
+  to {
+    color: inherit;
+
+    background-color: #ffffff;
+  }
+}
+
+.write-us-input:-webkit-autofill {
+  -webkit-animation-name: autofill-write;
+  -webkit-animation-fill-mode: both;
 }
 
 .write-us-input:hover,
