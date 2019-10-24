@@ -661,7 +661,7 @@ main ul {
   cursor: pointer;
 }
 
-.promo-slider-button-active {
+.promo-slider-button-current {
   width: 12px;
   height: 12px;
 
@@ -716,16 +716,10 @@ main ul {
 
 .promo-slide-fittracker::after {
   content: "02";
-  /* right: 45px;
-
-  letter-spacing: 3.5px; */
 }
 
 .promo-slide-quadcopter::after {
   content: "03";
-  /* right: 45px;
-
-  letter-spacing: 3.5px; */
 }
 
 .promo-image {
@@ -1048,7 +1042,12 @@ main ul {
 .services-item {
   position: relative;
 
+  display: none;
   padding-right: 300px;
+}
+
+.services-item-show {
+  display: list-item;
 }
 
 .services-item p {
@@ -1103,11 +1102,6 @@ main ul {
   background-image: url("../img/icon-serviceslider-credit.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
-}
-
-.services-item-credit,
-.services-item-warranty {
-  display: none;
 }
 
 .services-slider-heading,
