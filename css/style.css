@@ -641,6 +641,7 @@ main ul {
   position: absolute;
   top: 327px;
   right: 80px;
+  z-index: 1;
 
   display: flex;
   justify-content: space-between;
@@ -676,8 +677,12 @@ main ul {
 .promo-slides-item {
   position: relative;
 
-  display: flex;
+  display: none;
   justify-content: space-between;
+}
+
+.promo-slides-item-show {
+  display: flex;
 }
 
 .promo-slides-item::before {
@@ -696,13 +701,13 @@ main ul {
   content: "";
   position: absolute;
   top: 60px;
-  right: 47px;
+  left: 906px;
 
   font-family: "Gilory", Arial, sans-serif;
   font-size: 179.2px;
   font-weight: 800;
   color: #ffffff;
-  letter-spacing: 1px;
+  letter-spacing: 3.5px;
 }
 
 .promo-slide-selfie::after {
@@ -711,21 +716,16 @@ main ul {
 
 .promo-slide-fittracker::after {
   content: "02";
-  right: 45px;
+  /* right: 45px;
 
-  letter-spacing: 3.5px;
+  letter-spacing: 3.5px; */
 }
 
 .promo-slide-quadcopter::after {
   content: "03";
-  right: 45px;
+  /* right: 45px;
 
-  letter-spacing: 3.5px;
-}
-
-.promo-slide-fittracker,
-.promo-slide-quadcopter {
-  display: none;
+  letter-spacing: 3.5px; */
 }
 
 .promo-image {
@@ -758,7 +758,7 @@ main ul {
   padding-top: 65px;
 }
 
-.promo-fittracker-image img {
+.promo-quadcopter-image img {
   width: 526px;
   height: 334px;
 }
