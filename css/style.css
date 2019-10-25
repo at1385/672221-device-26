@@ -704,7 +704,8 @@ main ul {
   content: "";
   position: absolute;
   top: 60px;
-  left: 906px;
+  /* left: 906px; */
+  right: 45px;
 
   font-family: "Gilory", Arial, sans-serif;
   font-size: 179.2px;
