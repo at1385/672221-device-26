@@ -217,7 +217,7 @@ input[type="radio"].visually-hidden {
   background-color: #f7e296;
 
   border: none;
-  border-bottom: 2px solid #000000;
+  border-bottom: 2px solid transparent;
 }
 
 .site-search::before {
@@ -235,7 +235,6 @@ input[type="radio"].visually-hidden {
 
 .search-input:invalid {
   box-shadow: none;
-  border-bottom: 2px solid transparent;
 
   outline:none;
 }
@@ -321,9 +320,8 @@ input[type="radio"].visually-hidden {
   color: rgba(255, 255, 255, 0.3);
 }
 
-.search-input ~ .search-button:active,
 .search-input:focus ~ .search-button,
-.search-input:valid ~ .search-button {
+.search-button:active {
   display: block;
 }
 
@@ -337,14 +335,16 @@ input[type="radio"].visually-hidden {
   display: none;
   width: 356px;
   height: 48px;
+}
 
+.search-input:invalid ~ .search-button:active::before {
+  display: block;
   background-color: #f7e296;
-
-  border-bottom: 2px solid #000000;
 }
 
 .search-button:active::before {
   display: block;
+  border-bottom: 2px solid #000000;
 }
 
 /* 1-я строка - Правая колонка */
