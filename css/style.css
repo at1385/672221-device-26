@@ -340,7 +340,13 @@ input[type="radio"].visually-hidden {
   color: rgba(255, 255, 255, 0.3);
 }
 
+.site-search:focus-within .search-button {
+  display: block;
+}
+
 .search-input:focus ~ .search-button,
+.search-button:hover,
+.search-button:focus,
 .search-button:active {
   display: block;
 }
@@ -357,11 +363,13 @@ input[type="radio"].visually-hidden {
   height: 48px;
 }
 
+.search-input:invalid ~ .search-button:focus::before,
 .search-input:invalid ~ .search-button:active::before {
   display: block;
   background-color: #f7e296;
 }
 
+.search-button:focus::before,
 .search-button:active::before {
   display: block;
   border-bottom: 2px solid #000000;
