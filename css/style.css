@@ -193,18 +193,6 @@ input[type="radio"].visually-hidden {
   margin-bottom: 26px;
 }
 
-.header-right-column {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  width: 500px;
-}
-
 /* 1-я строка - Форма поиска */
 .site-search {
   position: relative;
@@ -536,7 +524,7 @@ input[type="radio"].visually-hidden {
 }
 
 .header-catalog-menu > a,
-.header-services a,
+.header-info-menu a,
 .header-contacts a {
   font-family: "Gilory", Arial, sans-serif;
   font-size: 18px;
@@ -615,38 +603,31 @@ input[type="radio"].visually-hidden {
   display: block;
 }
 
-/* 2-я строка - Правая колонка */
-.header-second-row .header-right-column {
-  margin-top: 3px;
-}
-
-.header-second-row .header-services {
+.header-second-row .header-info-menu {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  width: 360px;
-  margin-right: 20px;
+  width: 500px;
+  margin-top: 3px;
 }
 
-.header-services a {
-  display: block;
+.header-info-menu li {
   width: 140px;
   margin-right: 20px;
 }
 
-.header-contacts {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-
-  width: 120px;
+.header-info-menu li:last-child {
+  margin-right: 0;
 }
 
-.header-contacts a {
+.header-info-menu .header-contacts {
+  width: 120px;
+  margin-left: 60px;
+}
+
+.header-info-menu a {
   display: block;
 }
 
