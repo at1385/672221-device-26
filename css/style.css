@@ -2362,6 +2362,11 @@ main ul {
   color: rgba(255, 255, 255, 0.3);
 }
 
+/* Вторая строка - Адрес */
+.footer-adress {
+  width: 205px;
+}
+
 /* Вторая строка - Информационное меню */
 .main-footer .footer-info-menu {
   display: -webkit-box;
