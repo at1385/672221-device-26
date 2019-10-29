@@ -147,15 +147,12 @@ input[type="radio"].visually-hidden {
 }
 
 /* Логотип */
-.main-index-navigation {
-  margin-bottom: 19px;
-}
-
 .main-header .header-logo {
   display: block;
   width: 163px;
   height: 35px;
   margin-left: 60px;
+  margin-bottom: 19px;
 }
 
 .header-logo img {
